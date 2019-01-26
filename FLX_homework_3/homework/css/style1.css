@@ -1,0 +1,259 @@
+html {
+  overflow: scroll; }
+  html::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; }
+  html body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff; }
+    html body .main-wrapper header {
+      width: 100vw;
+      height: 100vh;
+      background: url("../img/header_background_v1.jpg") no-repeat top/cover; }
+      html body .main-wrapper header .top-wrapper {
+        display: flex;
+        width: 100vw;
+        justify-content: space-between; }
+        html body .main-wrapper header .top-wrapper nav {
+          height: 60px;
+          margin-right: 100px; }
+          html body .main-wrapper header .top-wrapper nav a {
+            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
+            margin: 0;
+            text-align: center; }
+            html body .main-wrapper header .top-wrapper nav a:after {
+              content: '';
+              display: inline-block;
+              height: 60px;
+              margin: 0 8vw;
+              border-left: #607d8b solid 2px;
+              vertical-align: middle; }
+            html body .main-wrapper header .top-wrapper nav a:last-child:after {
+              display: none; }
+        html body .main-wrapper header .top-wrapper .logo img {
+          height: 150px; }
+      html body .main-wrapper header section h1, html body .main-wrapper header section main #contact h4, html body .main-wrapper main #contact header section h4 {
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 0;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 35vh; }
+      html body .main-wrapper header section a {
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 0;
+        background: #01acac;
+        color: #fff;
+        display: block;
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        margin: 20px auto;
+        font-weight: 500; }
+    html body .main-wrapper main {
+      width: 65vw;
+      margin: auto; }
+      html body .main-wrapper main .toolbar {
+        display: flex;
+        height: 80px;
+        justify-content: flex-end; }
+        html body .main-wrapper main .toolbar input {
+          margin: 20px 6px;
+          width: 200px;
+          height: 40px;
+          box-sizing: border-box;
+          padding-left: 20px;
+          background-color: #fff;
+          border: #607d8b solid 1px; }
+          html body .main-wrapper main .toolbar input::placeholder {
+            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            color: #000000;
+            text-decoration: none;
+            margin: 0;
+            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            font-size: 14px; }
+      html body .main-wrapper main #list h1, html body .main-wrapper main #list #contact h4, html body .main-wrapper main #contact #list h4 {
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 0;
+        color: #000000;
+        font-size: 23px;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0; }
+      html body .main-wrapper main #list article {
+        display: flex;
+        background-color: #efefef;
+        margin-bottom: 20px; }
+        html body .main-wrapper main #list article:last-child {
+          margin-bottom: 60px; }
+        html body .main-wrapper main #list article img {
+          height: 280px;
+          margin: 10px; }
+        html body .main-wrapper main #list article div {
+          margin: 7px 7px 5px 0px; }
+          html body .main-wrapper main #list article div .post .post-description {
+            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            color: #000000;
+            text-decoration: none;
+            margin: 0;
+            font-size: 12px;
+            color: #db0000;
+            margin-left: 5px; }
+          html body .main-wrapper main #list article div .post h3 {
+            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
+            margin: 0;
+            color: #0097a7;
+            font-size: 17.5px; }
+            html body .main-wrapper main #list article div .post h3:before {
+              content: '';
+              display: block;
+              margin: 5px;
+              border-bottom: #607d8b solid 1px;
+              width: 100%; }
+          html body .main-wrapper main #list article div .post p {
+            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            color: #000000;
+            text-decoration: none;
+            margin: 0;
+            margin-top: 5px;
+            height: 150px; }
+          html body .main-wrapper main #list article div .btn {
+            border: none;
+            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
+            margin: 0;
+            font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+            color: #fff;
+            background-color: #01acac;
+            font-size: 14px;
+            float: right;
+            margin: 10px;
+            height: 40px;
+            width: 200px;
+            font-weight: 500; }
+            html body .main-wrapper main #list article div .btn:hover {
+              cursor: pointer; }
+      html body .main-wrapper main #about {
+        margin: 0 15px 60px; }
+        html body .main-wrapper main #about h1, html body .main-wrapper main #about #contact h4, html body .main-wrapper main #contact #about h4 {
+          font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 700;
+          text-decoration: none;
+          margin: 0;
+          color: #000000;
+          font-size: 23px;
+          display: flex;
+          justify-content: flex-end;
+          margin: 0; }
+        html body .main-wrapper main #about p {
+          font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+          color: #000000;
+          text-decoration: none;
+          margin: 0;
+          margin: 5px 0 20px; }
+        html body .main-wrapper main #about img {
+          width: 100%; }
+      html body .main-wrapper main #contact h1, html body .main-wrapper main #contact h4 {
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 0;
+        color: #000000;
+        font-size: 23px;
+        display: flex;
+        justify-content: flex-end;
+        margin: 0; }
+      html body .main-wrapper main #contact h4 {
+        font-size: 15px;
+        margin-bottom: 20px; }
+      html body .main-wrapper main #contact form .contact {
+        display: flex;
+        justify-content: space-between; }
+        html body .main-wrapper main #contact form .contact p {
+          font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+          color: #000000;
+          text-decoration: none;
+          margin: 0;
+          color: #0097a7;
+          display: flex;
+          justify-content: flex-end;
+          color: #0097a7; }
+          html body .main-wrapper main #contact form .contact p:after {
+            content: '*';
+            margin-left: 5px; }
+        html body .main-wrapper main #contact form .contact input {
+          border: #607d8b solid 1px;
+          background-color: #fff;
+          width: 32vw;
+          height: 50px;
+          margin-bottom: 20px; }
+      html body .main-wrapper main #contact form .question p {
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        color: #000000;
+        text-decoration: none;
+        margin: 0;
+        color: #0097a7;
+        display: flex;
+        justify-content: flex-end;
+        color: #0097a7; }
+      html body .main-wrapper main #contact form .question textarea {
+        border: #607d8b solid 1px;
+        width: 64.8vw;
+        background-color: #fff; }
+      html body .main-wrapper main #contact form .btn {
+        border: none;
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        margin: 0;
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        color: #fff;
+        background-color: #01acac;
+        font-size: 14px;
+        float: right;
+        margin: 10px;
+        height: 40px;
+        width: 200px;
+        font-weight: 500;
+        margin: 15px 0; }
+        html body .main-wrapper main #contact form .btn:hover {
+          cursor: pointer; }
+    html body .main-wrapper footer {
+      clear: both; }
+      html body .main-wrapper footer span {
+        font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        color: #000000;
+        text-decoration: none;
+        margin: 0;
+        font-size: 12px;
+        margin: 20px; }
