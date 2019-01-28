@@ -241,7 +241,7 @@ main {
 
 .btn-subscribe {
     height: 40px;
-    width: 7vw;
+    width: 9vw;
     border: none;
     background: #097774;
     color: #FFFFFF;
@@ -271,7 +271,7 @@ main {
 .contact > div > div > div, .address {
     font-style: normal;
     margin: 70px 0;
-    width: 23vw;
+    width: 22.5vw;
     margin-right: 15px;
 }
 
