@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0b192f;
+    color: #fff;
+    padding: 0 2%;
+}
+.post-1 {
+    background: #B71757;
+}
+.post-2 {
+    background: #0D7E71;
+}
+.post-3 {
+    background: #b1660e;
+}
+.post-4 {
+    background: #d12767;
+}
+.post-5 {
+    background: #2d95bb;
+}
+header {
+    background-color: #162b4d;
+}
+.top-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.top-wrapper h1 {
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 195%;
+}
+.top-wrapper span {
+    color: #d12955;
+}
+/*Navigation for tablet and mobile code starts here*/
+.nav-menu {
+    background: #0b192f;
+    width: 96vw;
+    text-align: center;
+    position: fixed;
+    top: -300vh;
+    /*transition: all 0.5s;*/
+}
+.nav-menu a {
+    padding: 3% 0;
+}
+.nav-menu a:nth-of-type(2n) {
+    background: #162b4d;
+}
+.nav-menu a:hover {
+    background: #283d5f;
+}
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+.navbar label {
+    display: block;
+    font-size: 60%;
+    text-align: center;
+    margin: 7% 8% 8%;
+}
+#toggle {
+    display: none;
+}
+label[for="toggle"] {
+    cursor: pointer;
+    font-size: 150%;
+}
+input#toggle:checked + nav.nav-menu {
+    top: 19vh;
+}
+/*Navigation code ends here*/
+main {
+    margin: 4% 0;
+}
+section {
+    width: 100%;
+}
+.article {
+    display: flex;
+    flex-direction: column-reverse;
+}
+img {
+    width: 100%;
+}
+.article h2 {
+    font-size: 210%;
+    margin: 7%;
+}
+.content > div > p {
+    font-size: 70%;
+    line-height: 150%;
+    font-weight: 300;
+    color: #ffffff9c;
+    margin: 7%;
+}
+.date {
+    color: #ffffff4d;
+    width: 20%;
+    text-align: center;
+    margin: 7% auto;
+}
+.date h3 {
+    font-size: 230%;
+}
+.date h4 {
+    font-size: 130%;
+}
+aside > div {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 5%;
+    padding-bottom: 10%;
+}
+aside h3 {
+    font-size: 110%;
+    font-weight: 300;
+    margin: 10% 10% 3%;
+}
+aside p {
+    margin: 0 10%;
+    font-weight: 300;
+    font-size: 70%;
+    line-height: 150%;
+    color: #000000bd;
+}
+footer {
+    background-color: #162b4d;
+    color: #ffffff55;
+    padding: 5%;
+    margin-top: 10%;
+    font-size: 70%;
+    text-align: center;
+    line-height: 160%;
+}
+@media screen and (min-width: 480px) {
+    body {
+        padding: 0 1.25%;
+    }
+    .navbar label {
+        margin: 3% 8% 7%;
+    }
+    .nav-menu {
+        width: 97.52vw;
+    }
+    .top-wrapper h1 {
+        margin-bottom: 7%;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 57% 40%;
+        grid-template-areas: "section aside";
+        column-gap: 3%;
+    }
+    .section {grid-area: section;}
+    .aside {grid-area: aside;}
+    aside h3 {
+        font-size: 135%;
+    }
+    .content > div > p {
+        font-size: 70%;
+        line-height: 150%;
+        font-weight: 300;
+        color: #ffffff9c;
+    }
+}
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1395px;
+        margin: 0 auto;
+    }
+    .navbar {
+        display: none;
+    }
+    .top-wrapper {
+        flex-direction: unset;
+        justify-content: space-between;
+        height: 100px;
+    }
+    .top-wrapper h1 {
+        text-align: left;
+        margin: 2%;
+        font-size: 280%;
+    }
+    .nav-menu {
+        background: transparent;
+        display: flex;
+        justify-content: space-around;
+        width: 33%;
+        min-width: 40%;
+        height: 100%;
+        position: unset;
+        margin: 0 5%;
+    }
+    .nav-menu a {
+        font-size: 140%;
+        font-weight: 300;
+        width: 50%;
+        margin: 0 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 75% 23%;
+        grid-template-areas: "section aside";
+        column-gap: 2%;
+    }
+    /*Content hover settings*/
+    .post-1 > div:hover,
+    .post-2 > div:hover,
+    .post-3 > div:hover,
+    .post-4 > div:hover,
+    .post-5 > div:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+    .post-1 > div:hover p,
+    .post-2 > div:hover p,
+    .post-3 > div:hover p,
+    .post-4 > div:hover p,
+    .post-5 > div:hover p {
+        color: #fff;
+    }
+    .post-1 > div:hover .date,
+    .post-2 > div:hover .date,
+    .post-3 > div:hover .date,
+    .post-4 > div:hover .date,
+    .post-5 > div:hover .date {
+        color: #ffffff80;
+    }
+    .section {grid-area: section;}
+    .aside {grid-area: aside;}
+    .article > div > div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .article > div:nth-child(even) > div > img {
+        order: 2;
+    }
+    .article > div:nth-child(even) .content {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    .article > div:nth-child(even) h2 {
+        margin: 10% 9% 5% 0;
+    }
+    .article > div:nth-child(even) p {
+        margin: 0 8% 0 0;
+    }
+    .article > div:nth-child(1) > .content {
+        grid-template-columns: 90% 10%;
+    }
+    .article > div:nth-child(1) > .content > div {
+        width: 100%;
+    }
+    .article > div:nth-child(1) > .content > div > div > h2 {
+        margin: 5% 0 0 9%;
+    }
+    .article > div:nth-child(1) > .content > div > p {
+        margin: 2% 0 4% 8%;
+    }
+    .content {
+        display: flex;
+    }
+    .content > div:nth-child(1) {
+        width: 80%;
+    }
+    .content > div > p {
+        margin: 0 0 0 8%;
+        line-height: 170%;
+        font-size: 80%;
+    }
+    .date {
+        margin: 2% auto;
+    }
+    .article h2 {
+        margin: 10% 0 5% 9%;
+        line-height: 100%;
+        font-size: 160%;
+    }
+    aside h3 {
+        font-size: 170%;
+        margin: 10% 12% 3%;
+    }
+    aside p {
+        font-size: 85%;
+        margin: 0 12%;
+    }
+    footer {
+        margin-top: 0;
+        padding: 2%;
+        font-size: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .content > div > p {
+        font-size: 105%;
+    }
+    .article h2 {
+        font-size: 210%;
+    }
+    aside p {
+        font-size: 100%;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .article h2 {
+        font-size: 295%;
+    }
+}
+@media screen and (min-width: 1240px) {
+    .article h2 {
+        font-size: 370%;
+    }
+    .content > div:nth-child(1) {
+        width: 73%;
+    }
+    .date {
+        margin: 5% 0 0 6%;
+    }
+    .date h3 {
+        font-size: 355%;
+    }
+    .date h4 {
+        font-size: 210%;
+    }
+}
