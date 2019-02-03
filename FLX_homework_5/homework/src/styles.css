@@ -55,6 +55,7 @@ header {
     background: #162b4d;
 }
 .nav-menu a:hover {
+    filter: opacity(0.8);
     background: #283d5f;
 }
 .nav-menu a {
@@ -223,7 +224,7 @@ footer {
     .post-3 > div:hover,
     .post-4 > div:hover,
     .post-5 > div:hover {
-        opacity: 0.6;
+        filter: opacity(0.6);
         cursor: pointer;
     }
     .post-1 > div:hover p,
