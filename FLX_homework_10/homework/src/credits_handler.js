@@ -40,7 +40,7 @@ function userCard(cardNumber) {
             let money = creditsToTransfer + creditsToTransfer * auxValues.halfOfPercent;
             balance -= money;
             let addToCard = card.putCredits(creditsToTransfer);
-            addToHistory(creditsToTransfer, 'Transferred credits');
+            addToHistory(money, 'Withdrawal of credits');
             return {
                 money,
                 addToCard
