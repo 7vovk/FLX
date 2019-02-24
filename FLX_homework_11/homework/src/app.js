@@ -2,16 +2,11 @@ const empty = 0;
 const one = 1;
 const max = 10;
 const enter = 13;
-let check = getCl('chk');
+let check = document.getElementsByClassName('chk');
+let taskList = document.getElementById('tasksList');
+let info = document.getElementById('info');
 let inp = document.forms['inputForm'];
 let tl = document.forms['tasksList'];
-
-function getId(id) {
-    return document.getElementById(id);
-}
-function getCl(cl) {
-    return document.getElementsByClassName(cl);
-}
 
 //Check if input empty
 inp.addAction.addEventListener('keyup', checkIfEmpty);
@@ -35,7 +30,7 @@ inp.addEventListener('keypress', function (event) {
 inp.addBtn.addEventListener('click', addAct);
 function addAct() {
 
-    getId('tasksList').innerHTML += '<div class="task" draggable="true">\n<label>\n' +
+    tasksList.innerHTML += '<div class="task" draggable="true">\n<label>\n' +
         '<input type="checkbox" class="chk" name="chk">\n' +
         '<i class="material-icons unchecked">check_box_outline_blank</i>\n' +
         '<i class="material-icons checked">check_box</i>\n</label>\n<p>' + inp.addAction.value + '</p>\n' +
@@ -53,9 +48,9 @@ function addAct() {
         let elems = document.querySelectorAll('#tasksList .task');
         [].forEach.call(elems, dragNDropHandlers);
     }
-    if (getId('tasksList').children.length === max) {
+    if (tasksList.children.length === max) {
         inp.addAction.placeholder = '';
-        getId('info').style.visibility = 'visible';
+        info.style.visibility = 'visible';
         inp.addAction.disabled = true;
         inp.addBtn.disabled = true;
     }
@@ -68,8 +63,8 @@ tl.addEventListener('change', removeAct);
 function removeAct() {
 
     let rmv = tl.rmv;
-    let task = getCl('task');
-    let remove = getCl('remove');
+    let task = document.getElementsByClassName('task');
+    let remove = document.getElementsByClassName('remove');
 
     for (let i = 0; i < remove.length; i++) {
         if (remove.length === one) {
@@ -78,7 +73,7 @@ function removeAct() {
             if (rmv[i].checked) {
                 rmv[i].parentNode.parentNode.remove(task[i]);
             }
-            getId('info').style.visibility = 'hidden';
+            info.style.visibility = 'hidden';
             inp.addAction.disabled = false;
             inp.addAction.placeholder = 'Add New Action';
         }
@@ -95,17 +90,17 @@ function checkChkbx() {
     } else {
         for (let i = 0; i < tl.chk.length; i++) {
             if (check[i].style.pointerEvents === 'none') {
-                if (getId('tasksList').children.length === max) {
+                if (tasksList.children.length === max) {
                     inp.addAction.placeholder = '';
-                    getId('info').style.visibility = 'visible';
+                    info.style.visibility = 'visible';
                     inp.addAction.disabled = true;
                     inp.addBtn.disabled = true;
                 }
                 check[i].checked = true;
             } else if (check[i].checked) {
-                if (getId('tasksList').children.length === max) {
+                if (tasksList.children.length === max) {
                     inp.addAction.placeholder = '';
-                    getId('info').style.visibility = 'visible';
+                    info.style.visibility = 'visible';
                     inp.addAction.disabled = true;
                     inp.addBtn.disabled = true;
                 }
