@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.material-icons {
+    font-size: 30px;
+}
+.material-icons::selection {
+    background: transparent;
+}
+#root {
+    height: 560px;
+    width: 550px;
+    margin: 50px auto;
+    border: 1px solid #000;
+}
+h1 {
+    margin-top: 30px;
+    font-weight: 100;
+    text-align: center;
+    font-size: 24px;
+}
+#info {
+    visibility: hidden;
+    text-align: center;
+    width: 100%;
+}
+#inputWrapper {
+    display: flex;
+    margin: 0 25px 15px;
+    width: 500px;
+    align-items: center;
+    justify-content: space-around;
+}
+#inputForm {
+    height: 19px;
+    width: 450px;
+    border: 1px solid #000;
+}
+#inputForm::placeholder {
+    padding-left: 2px;
+    color: #b4b4b4;
+}
+#addBtn, .remove {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    border: transparent;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+.remove {
+    padding-left: 6px;
+}
+#addBtn:hover, .remove:hover, label:hover, .task:hover {
+    cursor: pointer;
+}
+#listWrapper {
+    border-top: 2px solid #000;
+    margin: 0 16px;
+    width: 500px;
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+#tasksList {
+    margin-left: 10px;
+}
+#paw {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+.chk, .checked, .rmv {
+    display: none;
+}
+.chk:checked ~ .checked {
+    display: inline-block;
+}
+.chk:checked ~ .unchecked {
+    display: none;
+}
+.rmv:checked ~ .remove {
+    display: inline-block;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    cursor: move;
+}
+p {
+    line-height: 32px;
+    font-size: 16px;
+    width: 425px;
+}
+#helper {
+    height: 50px;
+    visibility: hidden;
+}
