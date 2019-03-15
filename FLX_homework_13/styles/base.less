@@ -1,0 +1,64 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h6, p, a {
+  font-weight: @font-w700;
+}
+
+.article-content {
+  font-weight: @font-w100;
+  p {
+    font-weight: @font-w100;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid @light-grey;
+  #nav {
+    .nav-link {
+      color: @grey;
+      &:hover {
+        background: @blue;
+        color: @white;
+      }
+    }
+  }
+}
+
+.header-text, .related-classes {
+  color: @blue;
+  border-bottom: 1px solid @blue;
+}
+
+.article-description {
+  color: @blue;
+}
+
+.related-classes-border-red {
+  border-color: @red;
+  .related-classes-border-red__background {
+    background: @red;
+  }
+}
+.related-classes-border-blue {
+  border-color: @blue;
+  .related-classes-border-blue__background {
+    background: @blue;
+  }
+}
+.related-classes-border-orange {
+  border-color: @orange;
+  .related-classes-border-orange__background {
+    background: @orange;
+  }
+}
+.related-classes-border-green {
+  border-color: @green;
+  .related-classes-border-green__background {
+    background: @green;
+  }
+}
+.footer {
+  background: @grey;
+}
