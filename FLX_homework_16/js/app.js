@@ -58,7 +58,7 @@ Bot.prototype.move = function (direction) {
     }
 };
 Bot.prototype.showPosition = function () {
-    return `I am ${this.__proto__.constructor.name} '${this.name}'. I am located at ${this.x}:${this.y}`;
+    return `I am ${this.constructor.name} '${this.name}'. I am located at ${this.x}:${this.y}`;
 };
 
 
