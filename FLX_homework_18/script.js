@@ -33,7 +33,7 @@ xhr.onreadystatechange = function () {
 
                 let usernameDiv = document.createElement('div');
                 let nameDiv = document.createElement('div');
-                let paragraphName = document.createElement('a');
+                let paragraphName = document.createElement('p');
                 let inputName = document.createElement('input');
                 let emailDiv = document.createElement('div');
                 let paragraphEmail = document.createElement('p');
@@ -64,7 +64,6 @@ xhr.onreadystatechange = function () {
                 nameDiv.setAttribute('id', name);
                 document.getElementById(name).innerHTML += `Name: `;
                 nameDiv.appendChild(paragraphName);
-                paragraphName.setAttribute('href', '#');
                 nameDiv.appendChild(inputName);
                 infoWrap.appendChild(emailDiv);
                 emailDiv.setAttribute('id', email);
@@ -123,12 +122,15 @@ xhr.onreadystatechange = function () {
                 document.getElementById(address).children[1].style.margin = '0 5px 0 0';
                 document.getElementById(address).children[3].style.display = 'none';
                 document.getElementById(address).children[3].style.width = '330px';
+                document.getElementById(name).children[0].style.cursor = 'pointer';
+                document.getElementById(edit).style.cursor = 'pointer';
+                document.getElementById(remove).style.cursor = 'pointer';
 
-                document.getElementById(edit).onmouseover = function () {
-                    this.style.cursor = "pointer";
+                 document.getElementById(name).children[0].onmouseover = function () {
+                    this.style.backgroundColor = '#d6d6d6';
                 };
-                document.getElementById(remove).onmouseover = function () {
-                    this.style.cursor = "pointer";
+                 document.getElementById(name).children[0].onmouseout = function () {
+                     this.style.backgroundColor = 'transparent';
                 };
 
                 document.getElementById(username).innerHTML = `Userame: ${users[i].username}.`;
