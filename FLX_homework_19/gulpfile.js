@@ -1,14 +1,13 @@
 const {src, dest, series, task, watch} = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 const scss = require('gulp-sass');
-scss.compiler = require("node-sass");
 const htmlmin = require('gulp-htmlmin');
 const path = require('path');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const browserSync = require('browser-sync').create();
-const image = require('gulp-image');
+const imagemin = require('gulp-imagemin');
 
 
 let serverSync = () => {
@@ -21,7 +20,7 @@ let serverSync = () => {
 
 task('image', function () {
     return src('./src/img/*')
-        .pipe(image())
+        .pipe(imagemin())
         .pipe(dest('./dist/img'));
 });
 
@@ -32,6 +31,7 @@ task('minify', () => {
         .pipe(browserSync.reload({stream: true}));
 });
 
+scss.compiler = require("node-sass");
 task('scss', () => {
     return src('./src/scss/**/*.scss')
         .pipe(sourcemaps.init())
