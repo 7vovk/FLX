@@ -1,0 +1,32 @@
+body {
+  .container {
+    margin: 20px;
+    #gameButtons {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      #rock {
+        width: 125px;
+        height: 125px;
+        background: url(../img/css_sprites.png) -296px -10px;
+      }
+      #paper {
+        width: 125px;
+        height: 125px;
+        background: url('../img/css_sprites.png') -153px -10px;
+      }
+      #scissors {
+        width: 125px;
+        height: 125px;
+        background: url('../img/css_sprites.png') -10px -10px;
+      }
+    }
+    #reset {
+      margin: 10px auto;
+      display: block;
+      width: 200px;
+      height: 50px;
+      font-size: 24px;
+    }
+  }
+}

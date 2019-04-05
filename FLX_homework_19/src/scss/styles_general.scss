@@ -1,0 +1,29 @@
+body {
+  .container {
+    margin: 20px;
+    ul {
+      margin: auto;
+      width: 480px;
+      h2 {
+        margin: 20px 0;
+        font-size: 37px;
+      }
+      li {
+        font-size: 30px;
+      }
+    }
+    h3 {
+      text-align: center;
+      margin: 40px;
+      font-size: 30px;
+    }
+    #gameInfo {
+      height: 120px;
+      text-align: center;
+      font-size: 30px;
+      p {
+        line-height: 55px;
+      }
+    }
+  }
+}
