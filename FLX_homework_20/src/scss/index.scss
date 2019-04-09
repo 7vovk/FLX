@@ -1,0 +1,15 @@
+// Common
+@import 'material-icons'; // self hosted material icons
+
+.btnRed {
+  color: #FF0000;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.btnBlack {
+  color: #000;
+  &:hover {
+    cursor: pointer;
+  }
+}
