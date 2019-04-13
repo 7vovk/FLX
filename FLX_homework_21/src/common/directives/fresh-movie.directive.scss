@@ -1,0 +1,13 @@
+.movie--fresh {
+  background-color: #b5fcff;
+  border: 1px dotted;
+  color: #a23;
+  &:before {
+    content: 'NEW!';
+    font-size: 24px;
+    text-align: center;
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+  }
+}

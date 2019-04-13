@@ -1,0 +1,29 @@
+<div class="movie-info">
+  <h2>{{::$ctrl.movie.title}}</h2>
+  <h3 ng-if="$ctrl.movie.tagline">{{::$ctrl.movie.tagline}}</h3>
+  <img src="{{$ctrl.movie.poster_path}}"
+       alt="{{$ctrl.movie.title}}">
+  <p>Release date: <strong>{{$ctrl.movie.release_date | date }}</strong></p>
+  <div class="container">
+    <div class="genres">
+      <h4>Genres:</h4>
+      <p ng-repeat="genres in $ctrl.movie.genres track by $index">{{$ctrl.movie.genres[$index]}} /</p>
+    </div>
+    <div class="votes">
+      <h4>Votes:</h4>
+      <p>{{$ctrl.movie.vote_count ? $ctrl.movie.vote_count : 'No votes yet'}}</p>
+      <h4>Vote average:</h4>
+      <p>{{$ctrl.movie.vote_average ? $ctrl.movie.vote_average : 'No votes yet'}}</p>
+    </div>
+    <div class="budget">
+      <h4 ng-if="$ctrl.movie.budget">Budget:</h4>
+      <p ng-if="$ctrl.movie.budget">{{::$ctrl.movie.budget}}</p>
+      <h4 ng-if="$ctrl.movie.revenue">Revenue:</h4>
+      <p ng-if="$ctrl.movie.revenue">{{::$ctrl.movie.revenue}}</p>
+    </div>
+  </div>
+
+
+  <p>{{::$ctrl.movie.overview}}</p>
+  <a ui-sref="app">Back ⮌</a>
+</div>

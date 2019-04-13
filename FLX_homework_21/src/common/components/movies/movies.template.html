@@ -1,0 +1,40 @@
+<div class="movies">
+
+  <input class="search_box" type='text' ng-model='searchText'
+         placeholder="Search a film by name, description or genre"/>
+  <a ng-repeat="movie in $ctrl.movies | filter:searchText"
+     class="movies__overview" fresh-movie ui-sref="movie-info({ movieId: movie.id })">
+    <h2>{{movie.title}}</h2>
+    <h3>Release date: {{movie.release_date | date }}</h3>
+    <div>
+      <div class="poster">
+        <img ng-src="{{movie.poster_path}}"
+             alt="{{movie.title}}">
+        <h5 ng-if="movie.tagline">{{::movie.tagline}}</h5>
+      </div>
+
+      <div class="container">
+        <div class="genres">
+          <h4>Genres:</h4>
+          <p ng-repeat="genres in movie.genres track by $index">{{movie.genres[$index]}} / </p>
+        </div>
+        <div class="votes">
+          <h4 ng-if="movie.vote_count">Votes:</h4>
+          <p ng-if="movie.vote_count">{{movie.vote_count}}</p>
+          <h4 ng-if="movie.vote_average">Vote average:</h4>
+          <p ng-if="movie.vote_average">{{movie.vote_average}}</p>
+        </div>
+        <div class="budget">
+          <h4 ng-if="movie.budget">Budget:</h4>
+          <p ng-if="movie.budget">{{movie.budget}}</p>
+          <h4 ng-if="movie.revenue">Revenue:</h4>
+          <p ng-if="movie.revenue">{{movie.revenue}}</p>
+        </div>
+        <h4>Plot:</h4>
+        <p>{{movie.overview ? movie.overview : 'No description available'}}</p>
+
+      </div>
+
+    </div>
+  </a>
+</div>

@@ -1,0 +1,51 @@
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  h2{
+    margin-top: 10px;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  img {
+    max-height: 400px;
+  }
+
+  p {
+    margin: 20px;
+  }
+
+  .container {
+    display: block;
+
+    .genres, .votes, .budget {
+      display: block;
+      margin: 20px 0;
+      p {
+        display: inline-block;
+        margin: 0 5px 0 0;
+      }
+      h4 {
+        display: inline-block;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #a09c9c;
+    width: 30%;
+    text-align: center;
+    font-size: 24px;
+    &:hover {
+      background: rgba(181, 252, 255, 0.35);
+    }
+  }
+}
