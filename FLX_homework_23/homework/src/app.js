@@ -1,7 +1,7 @@
 let date = new Date();
 
 class User {
-    constructor(name, orderTotalPrice, weekendDiscount, nightDiscount, bonus) {
+    constructor(name = 'Unknown user', orderTotalPrice = 0, weekendDiscount = 0, nightDiscount = 0, bonus = 0) {
         this.name = name;
         this.orderTotalPrice = orderTotalPrice;
         this.weekendDiscount = weekendDiscount;
