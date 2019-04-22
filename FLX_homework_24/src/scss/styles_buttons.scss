@@ -1,0 +1,41 @@
+body {
+  .container {
+    margin: 20px;
+    #gameButtons {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+      #rock {
+        width: 125px;
+        height: 125px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      #paper {
+        width: 125px;
+        height: 125px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      #scissors {
+        width: 125px;
+        height: 125px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    #reset {
+      margin: 10px auto;
+      display: block;
+      width: 200px;
+      height: 50px;
+      font-size: 24px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
