@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch",
+    "build": "webpack --watch",
     "serve": "webpack-dev-server"
   },
   "license": "MIT",
