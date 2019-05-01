@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FLX Homework</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="calc">
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id="logs" placeholder="History" disabled/></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" id="result" placeholder="=" disabled/></td>
+        </tr>
+        <tr>
+            <td><button id="backspace" class="calc-btn">←</button></td>
+            <td><button id="minus" class="calc-btn">±</button></td>
+            <td><button id="sqrt" class="calc-btn">√</button></td>
+            <td><button id="division" class="calc-btn">÷</button></td>
+        </tr>
+        <tr>
+            <td><button id="percent" class="calc-btn">%</button></td>
+            <td><button id="memAdd" class="calc-btn">M+</button></td>
+            <td><button id="memClear" class="calc-btn">MC</button></td>
+            <td><button id="multiplication" class="calc-btn">ₓ</button></td>
+        </tr>
+        <tr>
+            <td><button id="seven" class="calc-btn">7</button></td>
+            <td><button id="eight" class="calc-btn">8</button></td>
+            <td><button id="nine" class="calc-btn">9</button></td>
+            <td><button id="subtraction" class="calc-btn">-</button></td>
+        </tr>
+        <tr>
+            <td><button id="four" class="calc-btn">4</button></td>
+            <td><button id="five" class="calc-btn">5</button></td>
+            <td><button id="six" class="calc-btn">6</button></td>
+            <td><button id="addition" class="calc-btn">+</button></td>
+        </tr>
+        <tr>
+            <td><button id="one" class="calc-btn">1</button></td>
+            <td><button id="two" class="calc-btn">2</button></td>
+            <td><button id="tree" class="calc-btn">3</button></td>
+            <td rowspan="2"><button id="equal" class="calc-btn" >=</button></td>
+        </tr>
+        <tr>
+            <td><button id="clear" class="calc-btn">C</button></td>
+            <td><button id="zero" class="calc-btn">0</button></td>
+            <td><button id="dot" class="calc-btn">.</button></td>
+        </tr>
+    </table>
+
+</div>
+
+<div id="info">
+    <p>Keyboard shortcuts</p>
+    <ol>
+        <li>"c" - clear all</li>
+        <li>"backspace" - clear last symbol</li>
+        <li>"enter" - count expression</li>
+        <li>"_" (shift and -) - add "-" sign before number (- the key at the top of keyboard in the number line)</li>
+        <li>"s" - take square from entered number</li>
+        <li>"%" (shift and 5) - to take % from entered number</li>
+        <li>"m" - add number to memory</li>
+        <li>"ctrl+m" - get number from memory and clear memory</li>
+        <li>"+,-,*,/" - for +, -, *, /</li>
+    </ol>
+</div>
+
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/calc.js"></script>
+</body>
+</html>
